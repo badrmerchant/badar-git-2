@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>HOME</Machine>
+    <WindowsUser>Shah</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>385288743CB90CD344F39A8A43017FC305393D59B4C820326F9918BBE5EE1397</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>8570AMSITSolutions.TouchCurrencyConverter_1.0.0.7_neutral__fzfbg8k2jcyrt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>8570AMSITSolutions.TouchCurrencyConverter_fzfbg8k2jcyrt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>8570AMSITSolutions.TouchCurrencyConverter</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=67193AC6-DCB6-4C12-BC52-A2033DF7B4B1</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.7</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-14T22:27:06.000</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2013-03-14T21:58:27.329</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\html\privacy.html">
+      <PackagePath>html\privacy.html</PackagePath>
+      <Modified>2013-03-09T08:37:06.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\BlackLoading.gif">
+      <PackagePath>images\BlackLoading.gif</PackagePath>
+      <Modified>2013-03-12T21:44:56.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\Cur_bg.png">
+      <PackagePath>images\Cur_bg.png</PackagePath>
+      <Modified>2013-03-12T15:22:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\AED.png">
+      <PackagePath>images\flags\AED.png</PackagePath>
+      <Modified>2007-06-16T06:01:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\ARS.png">
+      <PackagePath>images\flags\ARS.png</PackagePath>
+      <Modified>2007-06-16T05:58:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\AUD.png">
+      <PackagePath>images\flags\AUD.png</PackagePath>
+      <Modified>2007-06-19T07:54:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\BGN.png">
+      <PackagePath>images\flags\BGN.png</PackagePath>
+      <Modified>2007-06-16T05:58:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\BHD.png">
+      <PackagePath>images\flags\BHD.png</PackagePath>
+      <Modified>2007-06-16T05:58:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\BRL.png">
+      <PackagePath>images\flags\BRL.png</PackagePath>
+      <Modified>2007-06-16T05:58:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CAD.png">
+      <PackagePath>images\flags\CAD.png</PackagePath>
+      <Modified>2007-06-16T05:58:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CHF.png">
+      <PackagePath>images\flags\CHF.png</PackagePath>
+      <Modified>2007-06-16T06:00:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CLP.png">
+      <PackagePath>images\flags\CLP.png</PackagePath>
+      <Modified>2007-06-16T05:58:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CNY.png">
+      <PackagePath>images\flags\CNY.png</PackagePath>
+      <Modified>2007-06-16T05:58:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\COP.png">
+      <PackagePath>images\flags\COP.png</PackagePath>
+      <Modified>2007-06-16T05:58:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CRC.png">
+      <PackagePath>images\flags\CRC.png</PackagePath>
+      <Modified>2007-06-16T05:58:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\CZK.png">
+      <PackagePath>images\flags\CZK.png</PackagePath>
+      <Modified>2007-06-16T05:58:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\DKK.png">
+      <PackagePath>images\flags\DKK.png</PackagePath>
+      <Modified>2007-06-16T05:58:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\DOP.png">
+      <PackagePath>images\flags\DOP.png</PackagePath>
+      <Modified>2007-06-16T05:58:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\DZD.png">
+      <PackagePath>images\flags\DZD.png</PackagePath>
+      <Modified>2007-06-16T05:58:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\EEK.png">
+      <PackagePath>images\flags\EEK.png</PackagePath>
+      <Modified>2007-06-16T05:58:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\EGP.png">
+      <PackagePath>images\flags\EGP.png</PackagePath>
+      <Modified>2007-06-16T05:58:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\EUR.png">
+      <PackagePath>images\flags\EUR.png</PackagePath>
+      <Modified>2007-06-16T05:59:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\FJD.png">
+      <PackagePath>images\flags\FJD.png</PackagePath>
+      <Modified>2007-06-16T05:59:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\GBP.png">
+      <PackagePath>images\flags\GBP.png</PackagePath>
+      <Modified>2007-06-16T06:01:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\HKD.png">
+      <PackagePath>images\flags\HKD.png</PackagePath>
+      <Modified>2007-06-16T05:59:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\HRK.png">
+      <PackagePath>images\flags\HRK.png</PackagePath>
+      <Modified>2007-06-16T05:58:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\HUF.png">
+      <PackagePath>images\flags\HUF.png</PackagePath>
+      <Modified>2007-06-16T05:59:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\IDR.png">
+      <PackagePath>images\flags\IDR.png</PackagePath>
+      <Modified>2007-06-16T05:59:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\ILS.png">
+      <PackagePath>images\flags\ILS.png</PackagePath>
+      <Modified>2007-06-16T05:59:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\INR.png">
+      <PackagePath>images\flags\INR.png</PackagePath>
+      <Modified>2007-06-16T05:59:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\ISK.png">
+      <PackagePath>images\flags\ISK.png</PackagePath>
+      <Modified>2007-06-16T05:59:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\JMD.png">
+      <PackagePath>images\flags\JMD.png</PackagePath>
+      <Modified>2007-06-16T05:59:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\JOD.png">
+      <PackagePath>images\flags\JOD.png</PackagePath>
+      <Modified>2007-06-16T05:59:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\JPY.png">
+      <PackagePath>images\flags\JPY.png</PackagePath>
+      <Modified>2007-06-16T05:59:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\KES.png">
+      <PackagePath>images\flags\KES.png</PackagePath>
+      <Modified>2007-06-19T15:44:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\KRW.png">
+      <PackagePath>images\flags\KRW.png</PackagePath>
+      <Modified>2007-06-16T06:00:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\KWD.png">
+      <PackagePath>images\flags\KWD.png</PackagePath>
+      <Modified>2007-06-16T05:59:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\LBP.png">
+      <PackagePath>images\flags\LBP.png</PackagePath>
+      <Modified>2007-06-16T05:59:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\LKR.png">
+      <PackagePath>images\flags\LKR.png</PackagePath>
+      <Modified>2007-06-16T06:00:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\MAD.png">
+      <PackagePath>images\flags\MAD.png</PackagePath>
+      <Modified>2007-06-16T05:59:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\MUR.png">
+      <PackagePath>images\flags\MUR.png</PackagePath>
+      <Modified>2007-06-16T05:59:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\MXN.png">
+      <PackagePath>images\flags\MXN.png</PackagePath>
+      <Modified>2007-06-16T05:59:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\MYR.png">
+      <PackagePath>images\flags\MYR.png</PackagePath>
+      <Modified>2007-06-16T05:59:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\NOK.png">
+      <PackagePath>images\flags\NOK.png</PackagePath>
+      <Modified>2007-06-16T05:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\NZD.png">
+      <PackagePath>images\flags\NZD.png</PackagePath>
+      <Modified>2007-06-16T05:59:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\OMR.png">
+      <PackagePath>images\flags\OMR.png</PackagePath>
+      <Modified>2007-06-16T05:59:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\PEN.png">
+      <PackagePath>images\flags\PEN.png</PackagePath>
+      <Modified>2007-06-16T05:59:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\PHP.png">
+      <PackagePath>images\flags\PHP.png</PackagePath>
+      <Modified>2007-06-16T05:59:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\PKR.png">
+      <PackagePath>images\flags\PKR.png</PackagePath>
+      <Modified>2007-06-16T05:59:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\PLN.png">
+      <PackagePath>images\flags\PLN.png</PackagePath>
+      <Modified>2007-06-16T05:59:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\QAR.png">
+      <PackagePath>images\flags\QAR.png</PackagePath>
+      <Modified>2007-06-16T06:00:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\RON.png">
+      <PackagePath>images\flags\RON.png</PackagePath>
+      <Modified>2007-06-16T06:00:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\RUB.png">
+      <PackagePath>images\flags\RUB.png</PackagePath>
+      <Modified>2007-06-16T06:00:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\SAR.png">
+      <PackagePath>images\flags\SAR.png</PackagePath>
+      <Modified>2007-06-16T06:00:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\SEK.png">
+      <PackagePath>images\flags\SEK.png</PackagePath>
+      <Modified>2007-06-16T06:00:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\SGD.png">
+      <PackagePath>images\flags\SGD.png</PackagePath>
+      <Modified>2007-06-16T06:00:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\SKK.png">
+      <PackagePath>images\flags\SKK.png</PackagePath>
+      <Modified>2007-06-16T06:00:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\THB.png">
+      <PackagePath>images\flags\THB.png</PackagePath>
+      <Modified>2007-06-16T06:00:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\TND.png">
+      <PackagePath>images\flags\TND.png</PackagePath>
+      <Modified>2007-06-16T06:00:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\TRY.png">
+      <PackagePath>images\flags\TRY.png</PackagePath>
+      <Modified>2007-06-16T06:00:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\TTD.png">
+      <PackagePath>images\flags\TTD.png</PackagePath>
+      <Modified>2007-06-16T06:00:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\TWD.png">
+      <PackagePath>images\flags\TWD.png</PackagePath>
+      <Modified>2007-06-16T06:00:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\USD.png">
+      <PackagePath>images\flags\USD.png</PackagePath>
+      <Modified>2007-07-04T18:12:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\VEB.png">
+      <PackagePath>images\flags\VEB.png</PackagePath>
+      <Modified>2007-06-16T06:01:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\VND.png">
+      <PackagePath>images\flags\VND.png</PackagePath>
+      <Modified>2007-06-16T06:01:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\ZAR.png">
+      <PackagePath>images\flags\ZAR.png</PackagePath>
+      <Modified>2007-06-16T06:00:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\flags\ZMK.png">
+      <PackagePath>images\flags\ZMK.png</PackagePath>
+      <Modified>2007-06-16T06:01:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-08T10:32:59.742</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-08T10:27:05.726</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-08T19:26:04.748</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-08T10:32:53.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\images\widelogo.png">
+      <PackagePath>images\widelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-03-14T22:10:56.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\js\d3.v3.min.js">
+      <PackagePath>js\d3.v3.min.js</PackagePath>
+      <Modified>2013-03-08T13:24:38.700</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2013-03-14T21:57:23.447</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2013-03-14T21:59:11.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Shah\documents\visual studio 2012\Projects\Currency_converter_Radial\Currency_converter_Radial\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-03-14T22:27:03.255</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20512</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20512</FrameworkIdentity>
+      <AppxLocation>C:\Program Files\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
