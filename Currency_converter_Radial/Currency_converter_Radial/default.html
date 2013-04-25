@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Currency_converter_Radial</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Currency_converter_Radial references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+   
+    <script type="text/javascript" src="/js/d3.v3.min.js"></script>
+   
+
+
+
+<style>
+
+    
+</style>
+</head>
+<body>
+   <div id="main_box">
+
+<div id="main">
+    <div id="header">
+        <h1>Touch Currency Converter</h1>
+    </div>
+    <div id="main_svg"></div>
+</div>
+</div>
+
+<script src="js/d3.v3.min.js"></script>
+<script>
+    var data_all = [
+        { "type": "all", "curr": "A to B", "dataSec": "AtoB", "titl": "Countries A to B", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "C to D", "dataSec": "CtoD", "titl": "Countries C to D", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "E to I", "dataSec": "EtoI", "titl": "Countries E to I", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "J to M", "dataSec": "JtoM", "titl": "Countries J to M", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "N to R", "dataSec": "NtoR", "titl": "Countries N to R", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "S to T", "dataSec": "StoT", "titl": "Countries S to T", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "all", "curr": "U to Z", "dataSec": "UtoZ", "titl": "Countries U to Z", "imgurl": "images/flags/EUR.png", "population": 3 }
+    ]
+    var data_major = [
+        { "type": "major", "curr": "USD", "titl": "America (United States) Dollars", "imgurl": "images/flags/USD.png", "population": 3 },
+        { "type": "major", "curr": "EUR", "titl": "Euro", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "type": "major", "curr": "GBP", "titl": "United Kingdom Pounds", "imgurl": "images/flags/GBP.png", "population": 3 },
+        { "type": "major", "curr": "CAD", "titl": "Canada Dollars", "imgurl": "images/flags/CAD.png", "population": 3 },
+        { "type": "major", "curr": "AUD", "titl": "Australia Dollars", "imgurl": "images/flags/AUD.png", "population": 3 },
+        { "type": "major", "curr": "JPY", "titl": "Japan Yen", "imgurl": "images/flags/JPY.png", "population": 3 },
+        { "type": "major", "curr": "NZD", "titl": "New Zealand Dollars", "imgurl": "images/flags/NZD.png", "population": 3 },
+        { "type": "major", "curr": "CHF", "titl": "Switzerland Francs", "imgurl": "images/flags/CHF.png", "population": 3 },
+        { "type": "major", "curr": "ZAR", "titl": "South Africa Rand", "imgurl": "images/flags/ZAR.png", "population": 3 }
+    ]
+    var data_AtoB = [
+        { "curr": "DZD", "titl": "Algeria Dinars", "imgurl": "images/flags/DZD.png", "population": 3 },
+        { "curr": "USD", "titl": "America (United States) Dollars", "imgurl": "images/flags/USD.png", "population": 3 },
+        { "curr": "ARS", "titl": "Argentina Pesos", "imgurl": "images/flags/ARS.png", "population": 3 },
+        { "curr": "AUD", "titl": "Australia Dollars", "imgurl": "images/flags/AUD.png", "population": 3 },
+        { "curr": "BHD", "titl": "Bahrain Dinars", "imgurl": "images/flags/BHD.png", "population": 3 },
+        { "curr": "BRL", "titl": "Brazil Reais", "imgurl": "images/flags/BRL.png", "population": 3 },
+        { "curr": "BGN", "titl": "Bulgaria Leva", "imgurl": "images/flags/BGN.png", "population": 3 }
+    ]
+    var data_CtoD = [
+        { "curr": "CAD", "titl": "Canada Dollars", "imgurl": "images/flags/CAD.png", "population": 3 },
+        { "curr": "CLP", "titl": "Chile Pesos", "imgurl": "images/flags/CLP.png", "population": 3 },
+        { "curr": "CNY", "titl": "China Yuan Renminbi", "imgurl": "images/flags/CNY.png", "population": 3 },
+        { "curr": "COP", "titl": "Colombia Pesos", "imgurl": "images/flags/COP.png", "population": 3 },
+        { "curr": "CRC", "titl": "Costa Rica Colones", "imgurl": "images/flags/CRC.png", "population": 3 },
+        { "curr": "HRK", "titl": "Croatia Kuna", "imgurl": "images/flags/HRK.png", "population": 3 },
+        { "curr": "CZK", "titl": "Czech Republic Koruny", "imgurl": "images/flags/CZK.png", "population": 3 },
+        { "curr": "DKK", "titl": "Denmark Kroner", "imgurl": "images/flags/DKK.png", "population": 3 },
+        { "curr": "DOP", "titl": "Dominican Republic Pesos", "imgurl": "images/flags/DOP.png", "population": 3 }
+    ]
+    var data_EtoI = [
+        { "curr": "EGP", "titl": "Egypt Pounds", "imgurl": "images/flags/EGP.png", "population": 3 },
+        { "curr": "EEK", "titl": "Estonia Krooni", "imgurl": "images/flags/EEK.png", "population": 3 },
+        { "curr": "EUR", "titl": "Euro", "imgurl": "images/flags/EUR.png", "population": 3 },
+        { "curr": "FJD", "titl": "Fiji Dollars", "imgurl": "images/flags/FJD.png", "population": 3 },
+        { "curr": "HKD", "titl": "Hong Kong Dollars", "imgurl": "images/flags/HKD.png", "population": 3 },
+        { "curr": "HUF", "titl": "Hungary Forint", "imgurl": "images/flags/HUF.png", "population": 3 },
+        { "curr": "INR", "titl": "India Rupees", "imgurl": "images/flags/INR.png", "population": 3 },
+        { "curr": "IDR", "titl": "Indonesia Rupiahs", "imgurl": "images/flags/IDR.png", "population": 3 },
+        { "curr": "ILS", "titl": "Israel New Shekels", "imgurl": "images/flags/ILS.png", "population": 3 }
+    ]
+    var data_JtoM = [
+        { "curr": "JMD", "titl": "Jamaica Dollars", "imgurl": "images/flags/JMD.png", "population": 3 },
+        { "curr": "JPY", "titl": "Japan Yen", "imgurl": "images/flags/JPY.png", "population": 3 },
+        { "curr": "JOD", "titl": "Jordan Dinars", "imgurl": "images/flags/JOD.png", "population": 3 },
+        { "curr": "KES", "titl": "Kenya Shillings", "imgurl": "images/flags/KES.png", "population": 3 },
+        { "curr": "KRW", "titl": "Korea (South) Won", "imgurl": "images/flags/KRW.png", "population": 3 },
+        { "curr": "KWD", "titl": "Kuwait Dinars", "imgurl": "images/flags/KWD.png", "population": 3 },
+        { "curr": "LBP", "titl": "Lebanon Pounds", "imgurl": "images/flags/LBP.png", "population": 3 },
+        { "curr": "MYR", "titl": "Malaysia Ringgits", "imgurl": "images/flags/MYR.png", "population": 3 },
+        { "curr": "MUR", "titl": "Mauritius Rupees", "imgurl": "images/flags/MUR.png", "population": 3 },
+        { "curr": "MXN", "titl": "Mexico Pesos", "imgurl": "images/flags/MXN.png", "population": 3 },
+        { "curr": "MAD", "titl": "Morocco Dirhams", "imgurl": "images/flags/MAD.png", "population": 3 }
+    ]
+    var data_NtoR = [
+        { "curr": "NZD", "titl": "New Zealand Dollars", "imgurl": "images/flags/NZD.png", "population": 3 },
+        { "curr": "NOK", "titl": "Norway Kroner", "imgurl": "images/flags/NOK.png", "population": 3 },
+        { "curr": "OMR", "titl": "Oman Rials", "imgurl": "images/flags/OMR.png", "population": 3 },
+        { "curr": "PKR", "titl": "Pakistan Rupees", "imgurl": "images/flags/PKR.png", "population": 3 },
+        { "curr": "PEN", "titl": "Peru Nuevos Soles", "imgurl": "images/flags/PEN.png", "population": 3 },
+        { "curr": "PHP", "titl": "Philippines Pesos", "imgurl": "images/flags/PHP.png", "population": 3 },
+        { "curr": "PLN", "titl": "Poland Zlotych", "imgurl": "images/flags/PLN.png", "population": 3 },
+        { "curr": "QAR", "titl": "Qatar Riyals", "imgurl": "images/flags/QAR.png", "population": 3 },
+        { "curr": "RON", "titl": "Romania New Lei", "imgurl": "images/flags/RON.png", "population": 3 },
+        { "curr": "RUB", "titl": "Russia Rubles", "imgurl": "images/flags/RUB.png", "population": 3 }
+    ]
+    var data_StoT = [
+        { "curr": "SAR", "titl": "Saudi Arabia Riyals", "imgurl": "images/flags/SAR.png", "population": 3 },
+        { "curr": "SGD", "titl": "Singapore Dollars", "imgurl": "images/flags/SGD.png", "population": 3 },
+        { "curr": "SKK", "titl": "Slovakia Koruny", "imgurl": "images/flags/SKK.png", "population": 3 },
+        { "curr": "ZAR", "titl": "South Africa Rand", "imgurl": "images/flags/ZAR.png", "population": 3 },
+        { "curr": "KRW", "titl": "South Korea Won", "imgurl": "images/flags/KRW.png", "population": 3 },
+        { "curr": "LKR", "titl": "Sri Lanka Rupees", "imgurl": "images/flags/LKR.png", "population": 3 },
+        { "curr": "SEK", "titl": "Sweden Kronor", "imgurl": "images/flags/SEK.png", "population": 3 },
+        { "curr": "CHF", "titl": "Switzerland Francs", "imgurl": "images/flags/CHF.png", "population": 3 },
+        { "curr": "TWD", "titl": "Taiwan New Dollars", "imgurl": "images/flags/TWD.png", "population": 3 },
+        { "curr": "THB", "titl": "Thailand Baht", "imgurl": "images/flags/THB.png", "population": 3 },
+        { "curr": "TTD", "titl": "Trinidad and Tobago Dollars", "imgurl": "images/flags/TTD.png", "population": 3 },
+        { "curr": "TND", "titl": "Tunisia Dinars", "imgurl": "images/flags/TND.png", "population": 3 },
+        { "curr": "TRY", "titl": "Turkey Lira", "imgurl": "images/flags/TRY.png", "population": 3 }
+    ]
+    var data_UtoZ = [
+        { "curr": "AED", "titl": "United Arab Emirates Dirhams", "imgurl": "images/flags/AED.png", "population": 3 },
+        { "curr": "GBP", "titl": "United Kingdom Pounds", "imgurl": "images/flags/GBP.png", "population": 3 },
+        { "curr": "USD", "titl": "United States Dollars", "imgurl": "images/flags/USD.png", "population": 3 },
+        { "curr": "VEB", "titl": "Venezuela Bolivares", "imgurl": "images/flags/VEB.png", "population": 3 },
+        { "curr": "VND", "titl": "Vietnam Dong", "imgurl": "images/flags/VND.png", "population": 3 },
+        { "curr": "ZMK", "titl": "Zambia Kwacha", "imgurl": "images/flags/ZMK.png", "population": 3 }]
+    var amount = 1;
+    var curnode;
+    var from = 0;
+    var to = 0;
+    var conversion = 0;
+    var short_from_text = "";
+    var short_rhs_text = "";
+    var dumdum = 0;
+
+    var width = 960,
+            height = 730,
+            radius = Math.min(width, height) / 2;
+    var pie = d3.layout.pie()
+            .sort(null)
+            .value(function (d) { return d.population; });
+
+    var arc_all = d3.svg.arc()
+            .outerRadius(radius - 155)
+            .innerRadius(radius - 100);
+
+    var arc_outer_border = d3.svg.arc()
+            .outerRadius(radius - 100)
+            .innerRadius(radius - 95);
+
+    var arc_inner_border = d3.svg.arc()
+            .outerRadius(radius - 160)
+            .innerRadius(radius - 155);
+
+    var arc_in_border = d3.svg.arc()
+            .outerRadius(radius - 205)
+            .innerRadius(radius - 200);
+
+    var arc_major = d3.svg.arc()
+            .outerRadius(radius - 200)
+            .innerRadius(radius - 160);
+
+
+
+
+
+    var svg = d3.select("#main_svg").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("class", "main")
+            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var data = [{ "curr": "", "titl": "", "imgurl": "", "population": 3 }];
+    update("grad_out_border", "Outer_border", arc_outer_border, pie);
+
+    var data = [{ "curr": "", "titl": "", "imgurl": "", "population": 3 }];
+    update("grad_out_border", "Outer_border", arc_inner_border, pie);
+    var data = [{ "curr": "", "titl": "", "imgurl": "", "population": 3 }];
+    update("grad_out_border", "Outer_border", arc_in_border, pie);
+
+    var data = data_major;
+    update("grad_maj", "major", arc_major, pie);
+    var data = data_all;
+    update("grad_all", "all", arc_all, pie);
+
+    function update(grad, ids, arc, pie) {
+        var g = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "arc" + ids);
+        var g1 = svg.selectAll(".arc")
+                .data(pie(data))
+                .enter().append("g")
+                .attr("class", "result" + ids);
+
+        g.append("path")
+                .attr("class", function (d) { return d.data.curr; })
+                .attr("class", grad)
+                .attr("d", arc)
+                .on("mouseover", function (d) {
+                    d3.select(".arcmajor")
+                })
+                .on("click", function (d) {
+                    if (d.data.type == "all") {
+                        dataSec1 = d.data.dataSec;
+
+                        if (dataSec1 == "AtoB") {
+                            data = data_AtoB;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "CtoD") {
+                            data = data_CtoD;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "EtoI") {
+                            data = data_EtoI;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "JtoM") {
+                            data = data_JtoM;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "NtoR") {
+                            data = data_NtoR;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "StoT") {
+                            data = data_StoT;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+                        if (dataSec1 == "UtoZ") {
+                            data = data_UtoZ;
+                            update("grad_maj", "major", arc_major, pie);
+                        }
+
+
+                    }
+                    else {
+
+                        curd = d;
+                        
+                        
+                        curnode = d.data.curr;
+                        
+                        if (from != 0) {
+                            tip = from;
+                            to = curnode;
+                            if (tip != 0) {
+                                grs_img2 = g1.append("image")
+
+                                        .attr("xlink:href", "/" + d.data.imgurl)
+                                        .attr("x", "40px")
+                                        .attr("y", "-348px")
+                                        .attr("width", "48px")
+                                        .attr("height", "482px");
+
+                            }
+
+                            grs_img = g1.append("image")
+
+                                    .attr("xlink:href", "/images/BlackLoading.gif")
+                                    .attr("x", "-25px")
+                                    .attr("y", "-248px")
+                                    .attr("width", "48px")
+                                    .attr("height", "482px");
+
+                            WinJS.xhr({
+                                url: "http://www.currency-converter.mymapsof.com/ajax_converter_app.php?from=" + from + "&to=" + to + "&amount=" + amount
+                            })
+                              .then(function (response) {
+                                  grs_img.remove();
+                                  var output = response.responseText;
+                                  var resJ = JSON.parse(output);
+                                  short_rhs_text = resJ.rhs_text;
+                                  short_from_text = resJ.from_text;
+
+                                 
+                                  if (short_rhs_text == " United Arab Emirates Dirhams" || short_rhs_text == " United Arab Emirates Dirham") {
+                                      short_rhs_text = "U A E Dirham";
+                                     
+                                  }
+                                  if (short_from_text == " United Arab Emirates Dirhams" || short_from_text == " United Arab Emirates Dirham") {
+                                      
+                                      short_from_text = "U A E Dirham";
+                                      
+                                  }
+
+                                    
+                                    if (dumdum == 1) {
+                                        gres.remove();
+                                        gres1.remove();
+                                        gres2.remove();
+                                    }
+                                    dumdum = 1;
+                                    gres = g1.append("text")
+                                            .attr("id", "resultText")
+                                            .style("text-anchor", "middle")
+                                            .attr("dy", "-2em")
+                                            .text("1 " + short_from_text)
+                                            .style("fill", "#127dff")
+
+                                    gres1 = g1.append("text")
+                                            .attr("id", "resultText")
+                                            .style("text-anchor", "middle")
+                                            .attr("dy", "-0em")
+                                            .text(" = ")
+                                            .style("fill", "red")
+
+                                    gres2 = g1.append("text")
+                                            .attr("id", "resultText")
+                                            .style("text-anchor", "middle")
+                                            .attr("dy", "2em")
+                                            .text(resJ.conversion + " " + short_rhs_text)
+                                            .style("fill", "#127dff");
+
+
+                              });
+                           
+                            from = 0;
+                        }
+                        if (from == 0) {
+                           
+                            
+                            if (curnode!=to){
+                                from = curnode;
+                                
+                        }
+                            imgfromcheck = 1;
+                            
+
+                            if (from != 0 && from != to) {
+                                grs_img1 = g1.append("image")
+
+                                          .attr("xlink:href", "/" + d.data.imgurl)
+                                          .attr("x", "-80px")
+                                          .attr("y", "-348px")
+                                          .attr("width", "48px")
+                                          .attr("height", "482px");
+
+                            }
+                            
+                        }
+                    } 
+
+                });
+        
+
+        g.append("text")
+                .attr("transform", function (d) { return "translate(" + arc.centroid(d) + ")"; })
+                .attr("dy", ".35em")
+                .style("text-anchor", "middle")
+                .text(function (d) { return d.data.curr; });
+        g.append("title")
+                .text(function (d) { return d.data.titl; });
+    }
+
+
+</script>
+</body>
+</html>
